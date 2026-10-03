@@ -1,76 +1,74 @@
-<div align="center">
+﻿<div align="center">
 
 # 🛰️ ASA-AI VoIP Threat Sentinel
 
-### Détection de menaces et de fraude VoIP en temps réel, pilotée par l'IA
+### Détection de fraude et de menaces VoIP en temps réel, pilotée par l'IA
 
 [![Website](https://img.shields.io/badge/ASA%20AI-asa--ai.fr-6B2FA0?style=for-the-badge&logo=firefox&logoColor=white)](https://www.asa-ai.fr)
 [![Demo](https://img.shields.io/badge/Démo-sur%20demande-D6247A?style=for-the-badge&logo=rocket&logoColor=white)](mailto:contact@asa-ai.fr)
 [![Contact](https://img.shields.io/badge/Contact-contact@asa--ai.fr-1A1A2E?style=for-the-badge&logo=maildotru&logoColor=white)](mailto:contact@asa-ai.fr)
 
-*Protégez vos infrastructures SIP/VoIP contre la fraude, l'abus et les attaques — avant qu'elles ne coûtent.*
+**Voyez la fraude arriver — et stoppez-la — avant qu'elle n'atteigne votre facture.**
 
 </div>
 
 ---
 
-## Le problème
+## La fraude VoIP ne prévient pas. Threat Sentinel, si.
 
-La fraude télécom est l'une des plus coûteuses au monde — **estimée à plusieurs dizaines de milliards de dollars par an** (source : CFCA). Les infrastructures VoIP/SIP sont des cibles de choix :
+La fraude télécom est estimée à **plusieurs dizaines de milliards de dollars par an** (source : CFCA). IRSF, PBX compromis, spoofing d'identité, flood SIP : la plupart des équipes la découvrent **sur la facture**. Trop tard.
 
-- 📞 **Fraude au péage** (IRSF) : appels massifs vers des numéros surtaxés.
-- 🔓 **Compromission de PBX** : comptes SIP piratés, revente de minutes.
-- 🎭 **Usurpation d'identité d'appelant** (Caller ID spoofing).
-- 💥 **Attaques de disponibilité** : flood SIP, INVITE malformés, déni de service.
+**ASA-AI VoIP Threat Sentinel** surveille vos flux SIP en continu, **score le risque en temps réel** grâce à l'IA, et **bloque** les comportements frauduleux — automatiquement.
 
-La plupart des équipes **découvrent la fraude sur la facture** — trop tard.
+<div align="center">
 
-## La solution — Threat Sentinel
+### 📡 Supervision temps réel de votre infrastructure voix
 
-**ASA-AI VoIP Threat Sentinel** surveille vos flux SIP en continu, détecte les comportements anormaux **en temps réel** et déclenche l'alerte (ou la réponse) **avant** que la facture n'explose.
+![Dashboard VoIP Threat Sentinel](docs/img/threat-sentinel.png)
+
+</div>
+
+## Le moteur IA en action
+
+Scoring de risque continu, détection d'anomalies par apprentissage, et **blocage automatique** — en mode observation (shadow) ou actif :
+
+<div align="center">
+
+![Scoring et blocage IA](docs/img/guardvoip-detection.png)
+
+![GuardVoIP — moteur IA](docs/img/guardvoip-hero.png)
+
+</div>
+
+> Risque, anomalie, décision de blocage, latence : **chaque appel est évalué en continu**, pas a posteriori.
+
+## Ce que ça vous apporte
 
 | | |
 |---|---|
-| 🔎 **Détection temps réel** | Analyse des signaux SIP en flux : patterns d'appels, anomalies, signatures d'attaque. |
-| 🧠 **Scoring piloté par IA** | Priorisation des événements à risque, réduction du bruit et des faux positifs. |
-| 🛡️ **Anti-fraude** | IRSF, enumeration, brute-force de comptes SIP, spoofing d'identité. |
-| 📊 **Visibilité** | Tableaux de bord et corrélation des événements voix. |
-| 🔁 **Réponse orchestrée** | Alerte et actions de mitigation (intégrables à votre SOC). |
+| 🔎 **Temps réel** | La menace est détectée pendant l'appel, pas sur la facture du mois suivant. |
+| 🧠 **Scoring IA** | Priorisation intelligente : moins de bruit, moins de faux positifs. |
+| 🛡️ **Anti-fraude** | IRSF, énumération, brute-force de comptes SIP, usurpation d'identité. |
+| 🔁 **Blocage automatique** | Mode shadow (observation) ou actif, au choix. |
+| 🔌 **S'intègre** | À votre infrastructure VoIP existante — **sans la remplacer**. |
 
-> 💡 Conçu pour s'intégrer à une infrastructure VoIP existante, **sans la remplacer**.
+## Pour qui ?
 
-## Comment ça marche
-
-```
- Trafic SIP  ─▶  Capture / sondes  ─▶  Moteur de détection (IA)  ─▶  Scoring  ─▶  Alerte / Réponse
- (Asterisk,        (HEP / miroir)        anomalies + signatures       du risque     (SOC, SIEM, SOAR)
-  Kamailio,
-  OpenSIPS…)
-```
-
-## Intégrations
-
-- **Stacks SIP :** Asterisk · Kamailio · OpenSIPS · FreeSWITCH
-- **Capture / monitoring :** HOMER · HEP
-- **SOC :** SIEM (Wazuh) · SOAR · gestion d'incidents
-
-## Cas d'usage
-
-- **Opérateurs &amp; intégrateurs VoIP** — protéger les plateformes clients contre la fraude au péage.
+- **Opérateurs & intégrateurs VoIP** — protéger les plateformes clients contre la fraude au péage.
 - **Entreprises** — sécuriser le PBX et les trunks SIP.
 - **MSSP / SOC** — ajouter la **couche voix** à la supervision de sécurité.
 
 ---
 
-## 🚀 Voir Threat Sentinel en action
+## 🔒 Et le reste ?
 
-La solution se déploie et se démontre **sur votre contexte**. Pour une démonstration ou un pilote :
+Les captures ci-dessus montrent **ce que Threat Sentinel détecte**. L'**architecture**, les **modèles de détection** et les **règles de scoring** qui rendent ça possible — le vrai savoir-faire ASA AI — se dévoilent en **démonstration privée**, sur votre contexte.
 
 <div align="center">
 
-### 📩 **contact@asa-ai.fr** · 🌐 **[asa-ai.fr](https://www.asa-ai.fr)**
+## 🚀 Demandez votre démonstration
 
-[![Demander une démo](https://img.shields.io/badge/📅%20Demander%20une%20démo-D6247A?style=for-the-badge)](mailto:contact@asa-ai.fr?subject=Démo%20Threat%20Sentinel)
+### 📩 **contact@asa-ai.fr** · 🌐 **[asa-ai.fr](https://www.asa-ai.fr)**
 
 </div>
 
@@ -83,5 +81,5 @@ La solution se déploie et se démontre **sur votre contexte**. Pour une démons
 🌐 [asa-ai.fr](https://www.asa-ai.fr) · 📩 [contact@asa-ai.fr](mailto:contact@asa-ai.fr) · 💼 [LinkedIn](https://www.linkedin.com/in/asa-ai-101815430/)
 
 <div align="center">
-<sub>© ASA AI · AI Security &amp; SOC Automation · Île-de-France, France</sub>
+<sub>© ASA AI · AI Security & SOC Automation · Île-de-France, France</sub>
 </div>
