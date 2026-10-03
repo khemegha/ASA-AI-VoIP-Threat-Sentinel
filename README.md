@@ -1,37 +1,87 @@
-# ASA-AI: VoIP Threat Sentinel & Fraud-Block
+<div align="center">
 
-Empowering SOC Teams with Real-Time SIP Threat Detection, Risk Scoring, and Automated Fraud Enforcement.**
+# 🛰️ ASA-AI VoIP Threat Sentinel
 
-Overview
-**ASA-AI (VoIP Threat Sentinel & Fraud-Block)** is an enterprise-grade security orchestration and telemetry platform built to assist **SOC (Security Operations Center)** analysts in monitoring critical voice infrastructures.
+### Détection de menaces et de fraude VoIP en temps réel, pilotée par l'IA
+
+[![Website](https://img.shields.io/badge/ASA%20AI-asa--ai.fr-6B2FA0?style=for-the-badge&logo=firefox&logoColor=white)](https://www.asa-ai.fr)
+[![Demo](https://img.shields.io/badge/Démo-sur%20demande-D6247A?style=for-the-badge&logo=rocket&logoColor=white)](mailto:contact@asa-ai.fr)
+[![Contact](https://img.shields.io/badge/Contact-contact@asa--ai.fr-1A1A2E?style=for-the-badge&logo=maildotru&logoColor=white)](mailto:contact@asa-ai.fr)
+
+*Protégez vos infrastructures SIP/VoIP contre la fraude, l'abus et les attaques — avant qu'elles ne coûtent.*
+
+</div>
 
 ---
-## 🎬 Platform Demo in Action
-Watch the full demonstration of the real-time detection and Fraud-Block engine in action:
 
-[![Watch the video demo on YouTube](https://img.youtube.com/vi/za9NfKaPgqw/0.jpg)](https://www.youtube.com/watch?v=za9NfKaPgqw)
+## Le problème
+
+La fraude télécom est l'une des plus coûteuses au monde — **estimée à plusieurs dizaines de milliards de dollars par an** (source : CFCA). Les infrastructures VoIP/SIP sont des cibles de choix :
+
+- 📞 **Fraude au péage** (IRSF) : appels massifs vers des numéros surtaxés.
+- 🔓 **Compromission de PBX** : comptes SIP piratés, revente de minutes.
+- 🎭 **Usurpation d'identité d'appelant** (Caller ID spoofing).
+- 💥 **Attaques de disponibilité** : flood SIP, INVITE malformés, déni de service.
+
+La plupart des équipes **découvrent la fraude sur la facture** — trop tard.
+
+## La solution — Threat Sentinel
+
+**ASA-AI VoIP Threat Sentinel** surveille vos flux SIP en continu, détecte les comportements anormaux **en temps réel** et déclenche l'alerte (ou la réponse) **avant** que la facture n'explose.
+
+| | |
+|---|---|
+| 🔎 **Détection temps réel** | Analyse des signaux SIP en flux : patterns d'appels, anomalies, signatures d'attaque. |
+| 🧠 **Scoring piloté par IA** | Priorisation des événements à risque, réduction du bruit et des faux positifs. |
+| 🛡️ **Anti-fraude** | IRSF, enumeration, brute-force de comptes SIP, spoofing d'identité. |
+| 📊 **Visibilité** | Tableaux de bord et corrélation des événements voix. |
+| 🔁 **Réponse orchestrée** | Alerte et actions de mitigation (intégrables à votre SOC). |
+
+> 💡 Conçu pour s'intégrer à une infrastructure VoIP existante, **sans la remplacer**.
+
+## Comment ça marche
+
+```
+ Trafic SIP  ─▶  Capture / sondes  ─▶  Moteur de détection (IA)  ─▶  Scoring  ─▶  Alerte / Réponse
+ (Asterisk,        (HEP / miroir)        anomalies + signatures       du risque     (SOC, SIEM, SOAR)
+  Kamailio,
+  OpenSIPS…)
+```
+
+## Intégrations
+
+- **Stacks SIP :** Asterisk · Kamailio · OpenSIPS · FreeSWITCH
+- **Capture / monitoring :** HOMER · HEP
+- **SOC :** SIEM (Wazuh) · SOAR · gestion d'incidents
+
+## Cas d'usage
+
+- **Opérateurs &amp; intégrateurs VoIP** — protéger les plateformes clients contre la fraude au péage.
+- **Entreprises** — sécuriser le PBX et les trunks SIP.
+- **MSSP / SOC** — ajouter la **couche voix** à la supervision de sécurité.
+
 ---
 
-Telephony environments face relentless automated threats such as toll fraud, PBX exploitation, registration brute-forcing, and malicious SIP scanning. ASA-AI bridges the gap between telecom layers and SOC operations by delivering instant attack detection, dynamic risk evaluation, and automated mitigation loops.
+## 🚀 Voir Threat Sentinel en action
 
-## 🔍 Core Capabilities for SOC Teams
-Real-Time Attack Detection:** Instantly identifies malicious SIP patterns, unauthorized INVITE floods, suspicious REGISTER attempts, and automated scanning tools.
-Dynamic Risk Scoring:** Continuously evaluates real-time telemetry to assign precise risk percentages, flagging anomalous user-agents, international traffic spikes, and protocol mismatches.
-Automated Fraud-Block & Enforcement:** Empowers security teams with flexible enforcement modes—ranging from dry-run simulations (Shadow Block) to active interception loops (ALLOW, BLOCK, REVIEW).
-Unified Observability:** Provides high-visibility Grafana dashboards tailored for security operators to instantly correlate voice events with system performance.
+La solution se déploie et se démontre **sur votre contexte**. Pour une démonstration ou un pilote :
 
-SOC Workflow: How It Works
-1.Ingestion & Parsing:** Captures real-time SIP traffic and Homer/Hepify telemetry streams from enterprise telephony infrastructure.
-2. Analysis & Intelligence:** The machine learning and analytics engine inspects traffic behaviors, calculates ongoing risk levels, and correlates anomalies.
-3. Decision & Mitigation:** The Fraud-Block engine classifies events and triggers defensive actions to secure the communications grid without disrupting legitimate callers.
+<div align="center">
 
-🏗️ Technical Stack
-Telemetry & Capture:** Asterisk, Homer, Hepify, Node Exporter
-Analytics & AI:** Custom ML pipeline for anomaly scoring and risk assessment
-Visualization:** Prometheus & Grafana operational dashboards
-Enforcement:** Automated decision engine (ALLOW / BLOCK / REVIEW)
+### 📩 **contact@asa-ai.fr** · 🌐 **[asa-ai.fr](https://www.asa-ai.fr)**
 
-Getting Started
-1. Clone the repository:**
-   ```bash
-   git clone [https://github.com/khemegha/ASA-AI-VoIP-Threat-Sentinel.git](https://github.com/khemegha/ASA-AI-VoIP-Threat-Sentinel.git)
+[![Demander une démo](https://img.shields.io/badge/📅%20Demander%20une%20démo-D6247A?style=for-the-badge)](mailto:contact@asa-ai.fr?subject=Démo%20Threat%20Sentinel)
+
+</div>
+
+---
+
+## À propos d'ASA AI
+
+**ASA AI** conçoit des solutions de **sécurité VoIP** et d'**automatisation du SOC** pilotées par l'IA : détection de fraude VoIP, audit SIP, red teaming IA, évaluation d'agents et de workflows IA.
+
+🌐 [asa-ai.fr](https://www.asa-ai.fr) · 📩 [contact@asa-ai.fr](mailto:contact@asa-ai.fr) · 💼 [LinkedIn](https://www.linkedin.com/in/asa-ai-101815430/)
+
+<div align="center">
+<sub>© ASA AI · AI Security &amp; SOC Automation · Île-de-France, France</sub>
+</div>
